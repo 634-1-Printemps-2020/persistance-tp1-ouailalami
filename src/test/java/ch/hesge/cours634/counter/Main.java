@@ -13,8 +13,22 @@ public class Main {
         u.add(2);
         System.out.println(u);
 
-        u.inc();
+        u.add(-2);
         System.out.println(u);
+
+        //  test exception
+        try {
+            u.add(3);
+            System.out.println(u);
+
+            u.add(-2);
+            System.out.println(u);
+        }
+        catch(CounterException c){
+            System.out.println("petit soucis");
+        }
+
+        System.out.println("suite");
 
     }
 }
